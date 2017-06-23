@@ -1,0 +1,249 @@
+.logo {
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+header nav{
+    position:fixed;
+    right:30px;
+    z-index:10;
+}
+header nav li{
+    float:left;
+    margin-left:40px;
+    position: relative;
+    cursor: pointer;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;    
+    margin-top:5px;
+    opacity: 0.8; 
+    transition:background 0.7s linear;
+}
+header nav li a{
+    color:rgba(255,255,255,.8);
+    font-size:14px;
+    font-weight: bold;
+}
+.user-img {
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+    border: 10px solid hsla(108, 62%, 96%, 0.3);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*   关于我   start   */
+.about {
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+.about li {
+    width:700px;
+    list-style: square;
+    line-height: 2;
+    word-wrap:break-word;
+    }
+.about a {
+    color: #fff;
+    text-decoration: underline;
+}
+.about-title {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    display: flex;
+    width: 576px;
+    margin: 20px auto;
+}
+.about-title li {
+    flex: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.about-title .iconfont {
+    font-size: 30px;
+    display: block;
+}
+/*   关于我   end   */
+
+/*    经历  start      */
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+.fp-controlArrow.fp-next {
+    right: 50px;
+}
+
+.experience-wrap {
+    position: relative;
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.experience {
+    font-size: 14px;
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40px 10px 40px 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    height:450px;
+    box-shadow: 1px 1px 5px rgba(148, 147, 181, 0.64);
+    transition: background-color .5s, box-shadow .5s;
+    padding-right:10px;
+}
+.experience:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 5px rgba(148, 147, 181, 1);
+    transition: background-color .5s, box-shadow .5s;
+}
+.experience:hover dt,
+.experience:hover dd{
+    color: rgba(20, 16, 33, 1);
+    transition: color .5s;
+}
+
+.experience dt {
+    color: rgba(20, 16, 33, 0.48);
+    line-height: 2;
+    font-weight: bold;
+    text-align: center;
+    transition: color;
+}
+.experience dd{
+    color: rgba(20, 16, 33, 0.69);
+    line-height: 1.5;
+    transition: color;
+    border-bottom: 1px solid gray;
+}
+/*    经历  end      */
+
+/*    项目经验  start  */
+/*    项目经验  end  */
+.project-experience {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    text-align: left;
+    margin: 20px 20px 0;
+    height: 200px;
+    box-shadow: 1px 1px 20px rgba(183, 176, 180, 0.64);
+    transition: background-color .5s, box-shadow .5s;
+}
+.project-experience:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 5px rgba(148, 147, 181, 1);
+    transition: background-color .5s, box-shadow .5s;
+}
+.project-experience:hover dt,
+.project-experience:hover dd{
+    color: rgba(20, 16, 33, 1);
+    transition: color .5s;
+}
+
+.project-experience dt {
+    color: rgba(20, 16, 33, 0.48);
+    line-height: 2;
+    font-weight: bold;
+    text-align: center;
+    transition: color;
+}
+.project-experience dd{
+    color: rgba(20, 16, 33, 0.69);
+    line-height: 1.3;
+    transition: color;
+    word-break: break-all;
+
+}
+/*   技能  start   */
+
+.skills{
+    width: 768px;
+    margin: 0 auto;
+    text-align: left;
+}
+.skills li:nth-child(4n+4) {
+    margin-right: 0 !important;
+}
+.skills li {
+    display: inline-block;
+    width: 174px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.skills .iconfont {
+    font-size: 60px;
+    display: block;
+}
+.skills .iconfont.icon-css3,
+.skills .iconfont.icon-bootstrap {
+    font-size: 30px;
+    padding: 20px 0;
+}
+p,
+li,
+.title {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+.title {
+    font-size: 22px;
+}
+/* 翻页 */
+#fanye{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:20px;
+    left:50%;
+    margin-left: -25px;
+    background-size: 50px 50px;
+    opacity: 0.5;
+    -webkit-animation:rotate 1s linear 0.4s infinite;
+}
+.down{
+    background: url(../img/3.png);
+}
+@keyframes rotate{
+    0%{
+      transform: translateY(7px);
+    }
+    100%{
+      transform: translateY(-7px);
+    }
+}
