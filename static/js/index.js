@@ -1,7 +1,7 @@
 $(function () {
     /*   全屏滚动插件 fullPage 初始化    */
     $('#fullPage').fullpage({
-        sectionsColor: ['#9999cc','#4d5e8f','#6699cc','#a29971','#4d5e8f'],
+        sectionsColor: ['#99ffff','#99ffcc','#ffffff','#ccffcc','#4d5e8f'],
         scrollingSpeed: 300,
         navigation: true,
         navigationPosition: 'right',
