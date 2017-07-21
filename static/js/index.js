@@ -25,7 +25,7 @@ $(function () {
             }else{
                 $('#fanye').show();                
             }
-            $('nav li').eq(nextIndex-1).css('background','#c0c0c0').siblings().css('background','');;
+            $('nav li').eq(nextIndex-1).css('background','#a0a0a0').siblings().css('background','');;
         }
 
     });
