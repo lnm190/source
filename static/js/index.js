@@ -1,11 +1,11 @@
 $(function () {
     /*   全屏滚动插件 fullPage 初始化    */
     $('#fullPage').fullpage({
-        sectionsColor: ['#66cccc','#99cccc','#ccccff','#99cccc','#99ccff','#99cccc'],
+        sectionsColor: ['#66cccc','#99cccc','#ccccff','#99cccc','#99ccff'],
         scrollingSpeed: 300,
         navigation: true,
         navigationPosition: 'right',
-        anchors:['page1','page2','page3','page4','page5','page6'],
+        anchors:['page1','page2','page3','page4','page5'],
         onLeave: function (index, nextIndex, direction) {
             $(this).find('[data-animate]').map(function () {
                 $(this).removeClass($(this).data('init'));
@@ -20,7 +20,7 @@ $(function () {
                 $(this).addClass($(this).data('init'));
             });
             /*到达最后一页时，向下的箭头消失，否则显示*/ 
-            if(nextIndex>5){
+            if(nextIndex>4){
                 $('#fanye').hide();
             }else{
                 $('#fanye').show();                
